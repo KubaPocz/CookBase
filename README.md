@@ -1,15 +1,17 @@
-# CookBase - Aplikacja do zarządzania przepisami kulinarnymi
+# 🥘 **CookBase** - Aplikacja do zarządzania przepisami kulinarnymi
 
-CookBase to aplikacja mobilna stworzona w technologii .NET MAUI, służąca do lokalnego zarządzania przepisami kulinarnymi i produktami spożywczymi. Aplikacja działa w pełni offline, przechowując dane w bazie SQLite.
+CookBase to aplikacja mobilna stworzona w technologii **.NET MAUI**, służąca do lokalnego zarządzania przepisami kulinarnymi i produktami spożywczymi. Aplikacja działa w pełni offline, przechowując dane w bazie **SQLite**.
 
-## Funkcjonalności
+---
+
+## 🚀 **Funkcjonalności**
 
 - **Zarządzanie produktami spożywczymi**:
-  - Dodawanie produktów z przypisaną kategorią (np. nabiał, mięso, warzywa).
+  - 🥛 Dodawanie produktów z przypisaną kategorią (np. nabiał, mięso, warzywa).
   
 - **Tworzenie przepisów**:
-  - Umożliwia tworzenie przepisów kulinarnych z możliwością wyboru składników z listy lub dodawania nowych.
-  - Przepis zawiera:
+  - 🍴 Umożliwia tworzenie przepisów kulinarnych z możliwością wyboru składników z listy lub dodawania nowych.
+  - 📝 Przepis zawiera:
     - Nazwę.
     - Kroki przygotowania.
     - Czas przygotowania.
@@ -18,12 +20,14 @@ CookBase to aplikacja mobilna stworzona w technologii .NET MAUI, służąca do l
     - Zdjęcie gotowej potrawy.
   
 - **Generowanie listy zakupów**:
-  - Aplikacja umożliwia generowanie listy zakupów na podstawie wybranego przepisu w formie checklisty lub eksportu do pliku PDF.
+  - 🛒 Aplikacja umożliwia generowanie listy zakupów na podstawie wybranego przepisu w formie checklisty lub eksportu do pliku **PDF**.
   
 - **Importowanie przepisów**:
-  - Możliwość importu przepisów z pliku, co ułatwia rozbudowę własnej bazy kulinarnej.
+  - 📥 Możliwość importu przepisów z pliku, co ułatwia rozbudowę własnej bazy kulinarnej.
 
-## Architektura
+---
+
+## 🧩 **Architektura**
 
 Aplikacja została zaprojektowana zgodnie z architekturą **MVVM** (Model-View-ViewModel), co zapewnia łatwą skalowalność i testowalność aplikacji. 
 
@@ -31,14 +35,18 @@ Aplikacja została zaprojektowana zgodnie z architekturą **MVVM** (Model-View-V
 - **View**: Interfejs użytkownika, wyświetlający dane w odpowiednich ekranach.
 - **ViewModel**: Logika biznesowa, która łączy Model z View, zarządza danymi i obsługuje logikę aplikacji.
 
-## Technologie
+---
+
+## 🛠 **Technologie**
 
 - **.NET MAUI** - framework do tworzenia aplikacji mobilnych działających na wielu platformach.
 - **SQLite** - lokalna baza danych do przechowywania danych offline.
 - **MVVM** - architektura aplikacji.
 - **PDF Export** - generowanie plików PDF dla list zakupów.
 
-## Użycie
+---
+
+## 📱 **Użycie**
 
 Po uruchomieniu aplikacji użytkownik może:
 
@@ -48,21 +56,15 @@ Po uruchomieniu aplikacji użytkownik może:
 - Eksportować listy zakupów do pliku PDF.
 - Importować przepisy z plików.
 
-## Przykłady
+---
 
-### Dodawanie produktu
+## 🎨 **Przykłady**
+
+### 1. Dodawanie produktu
 Aby dodać produkt, użytkownik wybiera kategorię, wprowadza nazwę produktu i zapisuje go w bazie danych. Można dodać dowolną ilość produktów.
 
-### Tworzenie przepisu
+### 2. Tworzenie przepisu
 Aby stworzyć przepis, użytkownik wybiera składniki z listy lub dodaje nowe, określa kroki przygotowania, czas, poziom trudności oraz oznaczenie wege/wegan.
 
-### Generowanie listy zakupów
+### 3. Generowanie listy zakupów
 Na podstawie wybranego przepisu aplikacja generuje listę zakupów, którą można zapisać w formie checklisty lub pliku PDF.
-
-## Wkład
-
-Jeśli chcesz przyczynić się do rozwoju aplikacji, czuj się wolny do tworzenia pull requestów. Pamiętaj, aby dołączyć odpowiednie testy i dokumentację.
-
-## Licencja
-
-Projekt jest dostępny na licencji [MIT](LICENSE).
