@@ -11,14 +11,10 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.PackageName", "com.companyname.cookbase")]
-[assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.PublisherName", "User Name")]
-[assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.Name", "CookBase")]
-[assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.Version", "1.0.0.1")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("CookBase")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+605274951ce36582eebe70e0c04cf496d68d3f88")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fe62a1c14fbeb365384206a67e6724846c8971b2")]
 [assembly: System.Reflection.AssemblyProductAttribute("CookBase")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CookBase")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

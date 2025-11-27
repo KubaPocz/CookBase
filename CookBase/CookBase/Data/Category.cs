@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 public class Category
 {
@@ -11,4 +10,6 @@ public class Category
 
     // Relacja 1..* → Produkty
     public List<Product> Products { get; set; }
+
+    public string IconPath { get; set; }
 }
