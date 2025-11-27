@@ -57,7 +57,6 @@ K:\GitHub\CookBase\CookBase\CookBase\bin\Debug\net9.0-windows10.0.19041\win10-x6
 K:\GitHub\CookBase\CookBase\CookBase\bin\Debug\net9.0-windows10.0.19041\win10-x64\fish_and_seafood.scale-100.png
 K:\GitHub\CookBase\CookBase\CookBase\bin\Debug\net9.0-windows10.0.19041\win10-x64\flour_products.scale-100.png
 K:\GitHub\CookBase\CookBase\CookBase\bin\Debug\net9.0-windows10.0.19041\win10-x64\fruits.scale-100.png
-K:\GitHub\CookBase\CookBase\CookBase\bin\Debug\net9.0-windows10.0.19041\win10-x64\kategorie_produktow_lista.scale-100.png
 K:\GitHub\CookBase\CookBase\CookBase\bin\Debug\net9.0-windows10.0.19041\win10-x64\legumes.scale-100.png
 K:\GitHub\CookBase\CookBase\CookBase\bin\Debug\net9.0-windows10.0.19041\win10-x64\meat.scale-100.png
 K:\GitHub\CookBase\CookBase\CookBase\bin\Debug\net9.0-windows10.0.19041\win10-x64\nuts.scale-100.png
@@ -539,7 +538,6 @@ K:\GitHub\CookBase\CookBase\CookBase\obj\Debug\net9.0-windows10.0.19041\win10-x6
 K:\GitHub\CookBase\CookBase\CookBase\obj\Debug\net9.0-windows10.0.19041\win10-x64\resizetizer\r\fish_and_seafood.scale-100.png
 K:\GitHub\CookBase\CookBase\CookBase\obj\Debug\net9.0-windows10.0.19041\win10-x64\resizetizer\r\flour_products.scale-100.png
 K:\GitHub\CookBase\CookBase\CookBase\obj\Debug\net9.0-windows10.0.19041\win10-x64\resizetizer\r\fruits.scale-100.png
-K:\GitHub\CookBase\CookBase\CookBase\obj\Debug\net9.0-windows10.0.19041\win10-x64\resizetizer\r\kategorie_produktow_lista.scale-100.png
 K:\GitHub\CookBase\CookBase\CookBase\obj\Debug\net9.0-windows10.0.19041\win10-x64\resizetizer\r\legumes.scale-100.png
 K:\GitHub\CookBase\CookBase\CookBase\obj\Debug\net9.0-windows10.0.19041\win10-x64\resizetizer\r\meat.scale-100.png
 K:\GitHub\CookBase\CookBase\CookBase\obj\Debug\net9.0-windows10.0.19041\win10-x64\resizetizer\r\nuts.scale-100.png

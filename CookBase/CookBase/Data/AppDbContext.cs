@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace CookBase.Data
 {
@@ -8,12 +9,29 @@ namespace CookBase.Data
         public DbSet<Product> Products { get; set; }
         public DbSet<Recipe> Recipes { get; set; }
         public DbSet<RecipeProduct> RecipeProducts { get; set; }
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
-        {
-        }
+
+        public AppDbContext() : base() { }
+
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseSqlite("Data Source=app.db");
+            string databasePath = GetDatabasePath();
+            options.UseSqlite($"Filename={databasePath}");
+        }
+
+        private string GetDatabasePath()
+        {
+            string databaseFilename = "cookbase.db";
+
+            // Dla Android - specjalna ścieżka
+            if (DeviceInfo.Platform == DevicePlatform.Android)
+            {
+                return Path.Combine(FileSystem.AppDataDirectory, databaseFilename);
+            }
+            // Dla Windows/iOS/Mac
+            else
+            {
+                return Path.Combine(FileSystem.AppDataDirectory, databaseFilename);
+            }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

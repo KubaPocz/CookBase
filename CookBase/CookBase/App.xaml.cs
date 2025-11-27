@@ -1,4 +1,6 @@
-﻿namespace CookBase
+﻿using CookBase.Data;
+
+namespace CookBase
 {
     public partial class App : Application
     {

@@ -2,10 +2,81 @@
 <ContentPage
     x:Class="CookBase.MainPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Kategorie">
 
     <ScrollView>
-        <VerticalStackLayout Padding="30,0" Spacing="25" />
+        <FlexLayout
+            x:Name="CategoriesFlexLayout"
+            Margin="{OnIdiom Phone=16,
+                             Tablet=20,
+                             Desktop=60}"
+            Padding="0,0,0,16"
+            AlignContent="Center"
+            AlignItems="Center"
+            Direction="Row"
+            HorizontalOptions="FillAndExpand"
+            JustifyContent="Center"
+            Wrap="Wrap">
+
+            <BindableLayout.ItemTemplate>
+                <DataTemplate>
+                    <!--  Kafelek: stały rozmiar, ale zależny od typu urządzenia  -->
+                    <Frame
+                        Margin="5"
+                        Padding="10"
+                        BackgroundColor="{AppThemeBinding Light=#F8F9FA,
+                                                          Dark=#2D3748}"
+                        BorderColor="{AppThemeBinding Light=#E9ECEF,
+                                                      Dark=#4A5568}"
+                        CornerRadius="24"
+                        HasShadow="True"
+                        HeightRequest="{OnIdiom Phone=160,
+                                                Tablet=190,
+                                                Desktop=250}"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        WidthRequest="{OnIdiom Phone=140,
+                                               Tablet=180,
+                                               Desktop=250}">
+
+                        <VerticalStackLayout
+                            HorizontalOptions="Center"
+                            Spacing="8"
+                            VerticalOptions="Center">
+
+                            <Image
+                                Aspect="AspectFit"
+                                HeightRequest="{OnIdiom Phone=80,
+                                                        Tablet=90,
+                                                        Desktop=140}"
+                                HorizontalOptions="Center"
+                                Source="{Binding IconPath}"
+                                VerticalOptions="Center"
+                                WidthRequest="{OnIdiom Phone=80,
+                                                       Tablet=90,
+                                                       Desktop=140}" />
+
+                            <Label
+                                FontAttributes="Bold"
+                                FontSize="18"
+                                HorizontalOptions="Center"
+                                HorizontalTextAlignment="Center"
+                                LineBreakMode="WordWrap"
+                                MaxLines="2"
+                                Text="{Binding Name}"
+                                TextColor="{AppThemeBinding Light=#2D3748,
+                                                            Dark=#F7FAFC}"
+                                VerticalOptions="Center" />
+                        </VerticalStackLayout>
+
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnCategoryTapped" />
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                </DataTemplate>
+            </BindableLayout.ItemTemplate>
+        </FlexLayout>
     </ScrollView>
 
 </ContentPage>
