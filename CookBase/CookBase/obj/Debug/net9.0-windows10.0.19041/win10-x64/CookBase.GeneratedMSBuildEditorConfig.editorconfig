@@ -15,10 +15,8 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.TargetFrameworkIdentifier = .NETCoreApp
-build_property.TargetFrameworkVersion = v9.0
 build_property.RootNamespace = CookBase
-build_property.ProjectDir = K:\GitHub\CookBase\CookBase\CookBase\
+build_property.ProjectDir = C:\Users\Student1\Documents\GitHub\CookBase\CookBase\CookBase\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTAotOptimizerEnabled = true
@@ -32,31 +30,55 @@ build_property.CsWinRTUseWindowsUIXamlProjections = false
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[K:/GitHub/CookBase/CookBase/CookBase/App.xaml]
+[C:/Users/Student1/Documents/GitHub/CookBase/CookBase/CookBase/AddProductPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CookBase.AddProductPage.xaml
+build_metadata.AdditionalFiles.TargetPath = AddProductPage.xaml
+build_metadata.AdditionalFiles.RelativePath = AddProductPage.xaml
+
+[C:/Users/Student1/Documents/GitHub/CookBase/CookBase/CookBase/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CookBase.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[K:/GitHub/CookBase/CookBase/CookBase/AppShell.xaml]
+[C:/Users/Student1/Documents/GitHub/CookBase/CookBase/CookBase/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CookBase.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[K:/GitHub/CookBase/CookBase/CookBase/MainPage.xaml]
+[C:/Users/Student1/Documents/GitHub/CookBase/CookBase/CookBase/CategoriesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CookBase.CategoriesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = CategoriesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = CategoriesPage.xaml
+
+[C:/Users/Student1/Documents/GitHub/CookBase/CookBase/CookBase/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CookBase.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[K:/GitHub/CookBase/CookBase/CookBase/Resources/Styles/Colors.xaml]
+[C:/Users/Student1/Documents/GitHub/CookBase/CookBase/CookBase/ProductsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CookBase.ProductsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ProductsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ProductsPage.xaml
+
+[C:/Users/Student1/Documents/GitHub/CookBase/CookBase/CookBase/RecipesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CookBase.RecipesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = RecipesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = RecipesPage.xaml
+
+[C:/Users/Student1/Documents/GitHub/CookBase/CookBase/CookBase/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CookBase.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[K:/GitHub/CookBase/CookBase/CookBase/Resources/Styles/Styles.xaml]
+[C:/Users/Student1/Documents/GitHub/CookBase/CookBase/CookBase/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CookBase.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml

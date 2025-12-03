@@ -1,40 +1,23 @@
-﻿using CookBase.Data;
-namespace CookBase;
+﻿namespace CookBase;
+
 public partial class MainPage : ContentPage
 {
     public MainPage()
     {
         InitializeComponent();
-        LoadData();
+    }
+    private async void OnPrzepisyClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new RecipesPage());
     }
 
-    private async void LoadData()
+    private async void OnProduktyClicked(object sender, EventArgs e)
     {
-        try
-        {
-            // Inicjalizuj bazę
-            DatabaseInitializer.Initialize();
-
-            // Załaduj kategorie do UI
-            using var db = new AppDbContext();
-            var categories = db.Categories.ToList();
-
-            CategoriesFlexLayout.BindingContext = this;
-            BindableLayout.SetItemsSource(CategoriesFlexLayout, categories);
-        }
-        catch (Exception ex)
-        {
-            await DisplayAlert("Błąd", $"Nie udało się załadować danych: {ex.Message}", "OK");
-        }
+        await Navigation.PushAsync(new ProductsPage());
     }
-    private void OnCategoryTapped(object sender, EventArgs e)
+
+    private async void OnKategorieClicked(object sender, EventArgs e)
     {
-        var frame = sender as Frame;
-        var category = frame?.BindingContext as Category;
-        if (category != null)
-        {
-            // Obsłuż kliknięcie kategorii (np. nawigacja do listy produktów)
-            DisplayAlert("Kategoria", $"Wybrano kategorię: {category.Name}", "OK");
-        }
+        await Navigation.PushAsync(new CategoriesPage());
     }
 }

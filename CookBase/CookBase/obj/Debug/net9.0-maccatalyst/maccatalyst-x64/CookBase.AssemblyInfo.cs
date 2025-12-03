@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CookBase")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+d23d71f45f1dd21a17cb0071e3a9eec7a6479484")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+809ea466fb01805f26ed76e5986289b28ecceb9a")]
 [assembly: System.Reflection.AssemblyProductAttribute("CookBase")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CookBase")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
