@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using Microsoft.Maui.LifecycleEvents;
 
 namespace CookBase
 {
@@ -18,6 +19,18 @@ namespace CookBase
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
+            builder.ConfigureLifecycleEvents(events =>
+            {
+#if WINDOWS
+                events.AddWindows(window =>
+                {
+                    window.OnWindowCreated(w =>
+                    {
+                        w.ExtendsContentIntoTitleBar = true;
+                    });
+                });
+#endif
+            });
 
             return builder.Build();
         }
