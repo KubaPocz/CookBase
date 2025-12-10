@@ -1,36 +1,64 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CookBase.ProductsPage"
-             Title="Products">
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add Product" Clicked="OnAddProductClicked" />
-    </ContentPage.ToolbarItems>
-    <CollectionView
+             x:Class="CookBase.ProductsPage">
+    <VerticalStackLayout>
+        <Grid
+ColumnDefinitions="Auto,*,Auto"
+Padding="10,0"
+HeightRequest="60"
+VerticalOptions="Center">
+
+            <Button
+        Text="◄"
+        TextColor="Black"
+        BackgroundColor="White"
+        WidthRequest="60"
+        HeightRequest="60"
+        FontSize="{OnIdiom Desktop=40,
+        Tablet=35,
+        Phone=30}" 
+        Clicked="OnHomeClicked" />
+
+            <Button
+        Text="+"
+        Grid.Column="2"
+        TextColor="Black"
+        BackgroundColor="White"
+        WidthRequest="60"
+        HeightRequest="60"           
+        FontSize="{OnIdiom Desktop=40,
+        Tablet=35,
+        Phone=30}"
+                Clicked="OnAddProductClicked"/>
+        </Grid>
+        <CollectionView
         x:Name="ProductsList"
         Margin="16"
         SelectionMode="None">
 
-        <CollectionView.ItemTemplate>
-            <DataTemplate>
-                <Grid Padding="12" RowDefinitions="Auto,Auto">
 
-                    <!-- Nazwa produktu -->
-                    <Label
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="12" RowDefinitions="Auto,Auto">
+
+                        <!-- Nazwa produktu -->
+                        <Label
                         Text="{Binding Name}"
                         FontSize="18"
                         FontAttributes="Bold"
                         TextColor="{AppThemeBinding Light=#2D3748, Dark=#F7FAFC}" />
 
-                    <!-- Nazwa kategorii -->
-                    <Label
+                        <!-- Nazwa kategorii -->
+                        <Label
                         Grid.Row="1"
                         Text="{Binding Category.Name}"
                         FontSize="14"
                         TextColor="{AppThemeBinding Light=#6B7280, Dark=#CBD5E1}" />
 
-                </Grid>
-            </DataTemplate>
-        </CollectionView.ItemTemplate>
-    </CollectionView>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
 </ContentPage>

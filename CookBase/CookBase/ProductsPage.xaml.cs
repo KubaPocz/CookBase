@@ -15,8 +15,6 @@ public partial class ProductsPage : ContentPage
     {
         try
         {
-            DatabaseInitializer.Initialize();
-
             using var db = new AppDbContext();
 
             // £adujemy produkty + kategoriê
@@ -33,6 +31,10 @@ public partial class ProductsPage : ContentPage
     }
     private async void OnAddProductClicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new AddProductPage());
+        await Shell.Current.GoToAsync(nameof(AddProductPage));
+    }
+    private async void OnHomeClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("//main");
     }
 }

@@ -1,9 +1,36 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CookBase.RecipesPage"
-             Title="RecipesPage">
+             x:Class="CookBase.RecipesPage">
     <VerticalStackLayout>
+        <Grid
+ColumnDefinitions="Auto,*,Auto"
+Padding="10,0"
+HeightRequest="60"
+VerticalOptions="Center">
+
+            <Button
+        Text="◄"
+        TextColor="Black"
+        BackgroundColor="White"
+        WidthRequest="60"
+        HeightRequest="60"
+        FontSize="{OnIdiom Desktop=40,
+        Tablet=35,
+        Phone=30}" 
+        Clicked="OnHomeClicked" />
+
+            <Button
+        Text="+"
+        Grid.Column="2"
+        TextColor="Black"
+        BackgroundColor="White"
+        WidthRequest="60"
+        HeightRequest="60"           
+        FontSize="{OnIdiom Desktop=40,
+        Tablet=35,
+        Phone=30}" />
+        </Grid>
         <Label 
             Text="Welcome to .NET MAUI!"
             VerticalOptions="Center" 

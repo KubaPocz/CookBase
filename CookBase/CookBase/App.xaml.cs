@@ -1,4 +1,5 @@
-﻿using CookBase.Data;
+﻿using CookBase.Caches;
+using CookBase.Data;
 
 namespace CookBase
 {
@@ -7,11 +8,14 @@ namespace CookBase
         public App()
         {
             InitializeComponent();
+
+            DatabaseInitializer.Initialize();
+
+            CategoryCache.Initialize();
+
+            MainPage = new AppShell();
         }
 
-        protected override Window CreateWindow(IActivationState? activationState)
-        {
-            return new Window(new NavigationPage(new MainPage()));
-        }
     }
+
 }

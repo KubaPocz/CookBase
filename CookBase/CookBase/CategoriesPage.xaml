@@ -3,6 +3,42 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CookBase.CategoriesPage"
              Title="CategoriesPage">
+
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior
+        IsVisible="False"
+        IsEnabled="False" />
+    </Shell.BackButtonBehavior>
+    <Shell.TitleView>
+        <Grid
+        ColumnDefinitions="Auto,*,Auto"
+        Padding="10,0"
+        HeightRequest="60"
+        VerticalOptions="Center">
+
+            <Button
+            Text="◄"
+            TextColor="Black"
+            BackgroundColor="White"
+            WidthRequest="60"
+            HeightRequest="60"
+            FontSize="{OnIdiom Desktop=40,
+            Tablet=35,
+            Phone=30}" 
+            Clicked="OnHomeClicked" />
+
+            <Button
+                Grid.Column="2"
+                TextColor="Black"
+                BackgroundColor="White"
+                WidthRequest="60"
+                HeightRequest="60"           
+                FontSize="{OnIdiom Desktop=30,
+                Tablet=25,
+                Phone=20}" />
+        </Grid>
+    </Shell.TitleView>
+
     <ScrollView>
         <FlexLayout
         x:Name="CategoriesFlexLayout"

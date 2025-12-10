@@ -8,16 +8,16 @@ public partial class MainPage : ContentPage
     }
     private async void OnPrzepisyClicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new RecipesPage());
+        await Shell.Current.GoToAsync(nameof(RecipesPage));
     }
 
     private async void OnProduktyClicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new ProductsPage());
+        await Shell.Current.GoToAsync(nameof(ProductsPage));
     }
 
     private async void OnKategorieClicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new CategoriesPage());
+        await Shell.Current.GoToAsync(nameof(CategoriesPage));
     }
 }
