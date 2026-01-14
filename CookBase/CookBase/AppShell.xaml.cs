@@ -10,6 +10,9 @@
             Routing.RegisterRoute(nameof(ProductsPage), typeof(ProductsPage));
             Routing.RegisterRoute(nameof(CategoriesPage), typeof(CategoriesPage));
             Routing.RegisterRoute(nameof(AddProductPage), typeof(AddProductPage));
+            Routing.RegisterRoute(nameof(AddRecipePage), typeof(AddRecipePage));
+            Routing.RegisterRoute(nameof(EditProductPage), typeof(EditProductPage));
+            Routing.RegisterRoute(nameof(RecipeDetailsPage), typeof(RecipeDetailsPage));
         }
     }
 }

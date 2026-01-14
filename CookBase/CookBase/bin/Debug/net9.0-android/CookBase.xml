@@ -16,6 +16,11 @@
         <member name="M:CookBase.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
+        <member name="T:CookBase.RecipeImageSourceConverter">
+            <summary>
+            Jeśli brak ścieżki albo plik nie istnieje -> noImageRecipe.png z Resources/Images
+            </summary>
+        </member>
         <member name="T:CookBase.Resource">
             <summary>
             Android Resource Designer class.

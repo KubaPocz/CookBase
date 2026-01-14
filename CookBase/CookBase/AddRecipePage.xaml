@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="CookBase.AddRecipePage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Dodaj przepis">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="{OnIdiom Phone=16,
+                              Tablet=20,
+                              Desktop=60}"
+            BackgroundColor="LightGrey"
+            Spacing="12">
+
+            <Label
+                FontAttributes="Bold"
+                FontSize="22"
+                Text="Nowy przepis" />
+
+            <!--  Tytuł  -->
+            <Entry
+                x:Name="TitleEntry"
+                BackgroundColor="White"
+                Placeholder="Tytuł przepisu" />
+
+            <!--  Opis  -->
+            <Editor
+                x:Name="DescriptionEditor"
+                AutoSize="TextChanges"
+                BackgroundColor="White"
+                HeightRequest="140"
+                Placeholder="Opis / kroki przygotowania" />
+
+            <!--  Czas + trudność  -->
+            <Grid ColumnDefinitions="*, *" ColumnSpacing="12">
+                <Entry
+                    x:Name="TimeEntry"
+                    Grid.Column="0"
+                    BackgroundColor="White"
+                    Keyboard="Numeric"
+                    Placeholder="Czas (min)" />
+
+                <Picker
+                    x:Name="DifficultyPicker"
+                    Title="Trudność"
+                    Grid.Column="1"
+                    BackgroundColor="White" />
+            </Grid>
+
+            <!--  Zdjęcie (MediaPicker)  -->
+            <Label
+                FontAttributes="Bold"
+                FontSize="18"
+                Text="Zdjęcie (opcjonalnie)" />
+
+            <Frame
+                Padding="12"
+                BackgroundColor="LightGrey"
+                CornerRadius="16"
+                HasShadow="True">
+                <VerticalStackLayout Spacing="10">
+
+                    <!--  Kwadratowy podgląd  -->
+                    <Grid HorizontalOptions="Center">
+                        <Frame
+                            Padding="0"
+                            CornerRadius="18"
+                            HasShadow="False">
+                            <Image
+                                x:Name="RecipeImagePreview"
+                                Aspect="AspectFill"
+                                HeightRequest="{OnIdiom Phone=220,
+                                                        Tablet=260,
+                                                        Desktop=320}"
+                                IsVisible="False"
+                                WidthRequest="{OnIdiom Phone=220,
+                                                       Tablet=260,
+                                                       Desktop=320}" />
+                        </Frame>
+                    </Grid>
+
+                    <Grid ColumnDefinitions="*, *" ColumnSpacing="12">
+                        <Button
+                            Grid.Column="0"
+                            BackgroundColor="Orange"
+                            Clicked="OnPickPhotoClicked"
+                            Text="Wybierz z galerii"
+                            TextColor="Black" />
+                        <Button
+                            Grid.Column="1"
+                            BackgroundColor="Orange"
+                            Clicked="OnClearPhotoClicked"
+                            Text="Usuń zdjęcie"
+                            TextColor="Black" />
+                    </Grid>
+
+                    <Label
+                        x:Name="PhotoInfoLabel"
+                        FontSize="12"
+                        Opacity="0.7" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <BoxView HeightRequest="1" Opacity="0.2" />
+
+            <!--  Składniki  -->
+            <Label
+                FontAttributes="Bold"
+                FontSize="18"
+                Text="Składniki" />
+
+            <Picker
+                x:Name="CategoryPicker"
+                Title="Filtruj po kategorii (opcjonalnie)"
+                BackgroundColor="White"
+                SelectedIndexChanged="OnCategoryChanged" />
+
+            <SearchBar
+                x:Name="ProductSearchBar"
+                BackgroundColor="White"
+                Placeholder="Wpisz nazwę produktu…"
+                TextChanged="OnProductSearchChanged" />
+
+            <CollectionView
+                x:Name="ProductsResults"
+                EmptyView="Brak produktów pasujących do filtrów."
+                HeightRequest="220"
+                ItemsSource="{Binding FilteredProducts}"
+                SelectionMode="None">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame
+                            Margin="0,4"
+                            Padding="12"
+                            CornerRadius="14"
+                            HasShadow="True">
+                            <Grid ColumnDefinitions="*, Auto" ColumnSpacing="12">
+                                <Label
+                                    FontAttributes="Bold"
+                                    Text="{Binding Name}"
+                                    VerticalOptions="Center" />
+                                <Button
+                                    Grid.Column="1"
+                                    BackgroundColor="Orange"
+                                    Clicked="OnSelectProductClicked"
+                                    CommandParameter="{Binding .}"
+                                    Text="Wybierz"
+                                    TextColor="Black" />
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <Frame
+                Padding="12"
+                CornerRadius="14"
+                HasShadow="True">
+                <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
+                    <Label FontAttributes="Bold" Text="Wybrany:" />
+                    <Label x:Name="SelectedProductLabel" Text="(brak)" />
+                    <Button
+                        BackgroundColor="Orange"
+                        Clicked="OnClearSelectedProductClicked"
+                        Text="Wyczyść"
+                        TextColor="Black" />
+                </HorizontalStackLayout>
+            </Frame>
+
+            <Grid ColumnDefinitions="*, *" ColumnSpacing="12">
+                <Entry
+                    x:Name="QuantityEntry"
+                    Grid.Column="0"
+                    BackgroundColor="White"
+                    Keyboard="Numeric"
+                    Placeholder="Ilość (np. 200, 1.5)" />
+
+                <Entry
+                    x:Name="UnitEntry"
+                    Grid.Column="1"
+                    BackgroundColor="White"
+                    Placeholder="Jednostka (np. g, ml, szt.)" />
+            </Grid>
+
+            <Entry
+                x:Name="NoteEntry"
+                BackgroundColor="White"
+                Placeholder="Notatka (opcjonalnie)" />
+
+            <Button
+                BackgroundColor="Orange"
+                Clicked="OnAddIngredientClicked"
+                Text="Dodaj składnik"
+                TextColor="Black" />
+
+            <CollectionView
+                x:Name="IngredientsCollection"
+                EmptyView="Brak dodanych składników."
+                ItemsSource="{Binding Ingredients}"
+                SelectionMode="None">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame
+                            Margin="0,4"
+                            Padding="12"
+                            CornerRadius="14"
+                            HasShadow="True">
+                            <Grid ColumnDefinitions="*, Auto" ColumnSpacing="12">
+                                <VerticalStackLayout Grid.Column="0" Spacing="2">
+                                    <Label FontAttributes="Bold" Text="{Binding DisplayLine}" />
+                                    <Label
+                                        FontSize="12"
+                                        IsVisible="{Binding HasNote}"
+                                        Opacity="0.8"
+                                        Text="{Binding Note}" />
+                                </VerticalStackLayout>
+
+                                <Button
+                                    Grid.Column="1"
+                                    Clicked="OnRemoveIngredientClicked"
+                                    CommandParameter="{Binding .}"
+                                    Text="Usuń" />
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <BoxView HeightRequest="1" Opacity="0.2" />
+
+            <Button
+                BackgroundColor="Orange"
+                Clicked="OnSaveRecipeClicked"
+                Text="Zapisz przepis"
+                TextColor="Black" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

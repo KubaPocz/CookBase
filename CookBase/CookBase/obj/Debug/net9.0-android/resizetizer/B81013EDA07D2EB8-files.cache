@@ -1,11 +1,14 @@
-﻿obj\Debug\net9.0-android\resizetizer\r\drawable\dairy.png
+﻿obj\Debug\net9.0-android\resizetizer\r\drawable\background.png
+obj\Debug\net9.0-android\resizetizer\r\drawable\dairy.png
 obj\Debug\net9.0-android\resizetizer\r\drawable\fish_and_seafood.png
 obj\Debug\net9.0-android\resizetizer\r\drawable\flour_products.png
 obj\Debug\net9.0-android\resizetizer\r\drawable\fruits.png
 obj\Debug\net9.0-android\resizetizer\r\drawable\legumes.png
 obj\Debug\net9.0-android\resizetizer\r\drawable\meat.png
+obj\Debug\net9.0-android\resizetizer\r\drawable\no_image_recipe.png
 obj\Debug\net9.0-android\resizetizer\r\drawable\nuts.png
 obj\Debug\net9.0-android\resizetizer\r\drawable\oil.png
+obj\Debug\net9.0-android\resizetizer\r\drawable\other.png
 obj\Debug\net9.0-android\resizetizer\r\drawable\spices.png
 obj\Debug\net9.0-android\resizetizer\r\drawable\vegetables.png
 obj\Debug\net9.0-android\resizetizer\r\mipmap-anydpi-v26\appicon.xml

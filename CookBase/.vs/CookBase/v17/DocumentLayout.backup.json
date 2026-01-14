@@ -1,65 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Student1\\Documents\\GitHub\\CookBase\\CookBase\\",
+  "WorkspaceRootPath": "K:\\GitHub\\CookBase\\CookBase\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|c:\\users\\student1\\documents\\github\\cookbase\\cookbase\\cookbase\\productspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|solutionrelative:cookbase\\productspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|c:\\users\\student1\\documents\\github\\cookbase\\cookbase\\cookbase\\recipespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|solutionrelative:cookbase\\recipespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|c:\\users\\student1\\documents\\github\\cookbase\\cookbase\\cookbase\\recipespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|solutionrelative:cookbase\\recipespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|c:\\users\\student1\\documents\\github\\cookbase\\cookbase\\cookbase\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|solutionrelative:cookbase\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|c:\\users\\student1\\documents\\github\\cookbase\\cookbase\\cookbase\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|solutionrelative:cookbase\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|c:\\users\\student1\\documents\\github\\cookbase\\cookbase\\cookbase\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|solutionrelative:cookbase\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|c:\\users\\student1\\documents\\github\\cookbase\\cookbase\\cookbase\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|k:\\github\\cookbase\\cookbase\\cookbase\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|solutionrelative:cookbase\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|c:\\users\\student1\\documents\\github\\cookbase\\cookbase\\cookbase\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|solutionrelative:cookbase\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|c:\\users\\student1\\documents\\github\\cookbase\\cookbase\\cookbase\\cookbase.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|solutionrelative:cookbase\\cookbase.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|c:\\users\\student1\\documents\\github\\cookbase\\cookbase\\cookbase\\categoriespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|k:\\github\\cookbase\\cookbase\\cookbase\\categoriespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|solutionrelative:cookbase\\categoriespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|c:\\users\\student1\\documents\\github\\cookbase\\cookbase\\cookbase\\caches\\categorycache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|solutionrelative:cookbase\\caches\\categorycache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|k:\\github\\cookbase\\cookbase\\cookbase\\cookbase.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|solutionrelative:cookbase\\cookbase.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|c:\\users\\student1\\documents\\github\\cookbase\\cookbase\\cookbase\\categoriespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|solutionrelative:cookbase\\categoriespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|k:\\github\\cookbase\\cookbase\\cookbase\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|solutionrelative:cookbase\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|c:\\users\\student1\\documents\\github\\cookbase\\cookbase\\cookbase\\productspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|solutionrelative:cookbase\\productspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|k:\\github\\cookbase\\cookbase\\cookbase\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|solutionrelative:cookbase\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|c:\\users\\student1\\documents\\github\\cookbase\\cookbase\\cookbase\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|solutionrelative:cookbase\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Student1\\.nuget\\packages\\microsoft.maui.controls.build.tasks\\9.0.0\\buildTransitive\\netstandard2.0\\Microsoft.Maui.Controls.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|k:\\github\\cookbase\\cookbase\\cookbase\\recipedetailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B1D42365-9C7A-479E-8DF2-8366782530D6}|CookBase\\CookBase.csproj|solutionrelative:cookbase\\recipedetailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -69,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -77,196 +42,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MauiProgram.cs",
-              "DocumentMoniker": "C:\\Users\\Student1\\Documents\\GitHub\\CookBase\\CookBase\\CookBase\\MauiProgram.cs",
-              "RelativeDocumentMoniker": "CookBase\\MauiProgram.cs",
-              "ToolTip": "C:\\Users\\Student1\\Documents\\GitHub\\CookBase\\CookBase\\CookBase\\MauiProgram.cs",
-              "RelativeToolTip": "CookBase\\MauiProgram.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAowCAAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T16:41:48.907Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CookBase",
-              "DocumentMoniker": "C:\\Users\\Student1\\Documents\\GitHub\\CookBase\\CookBase\\CookBase\\CookBase.csproj",
-              "RelativeDocumentMoniker": "CookBase\\CookBase.csproj",
-              "ToolTip": "C:\\Users\\Student1\\Documents\\GitHub\\CookBase\\CookBase\\CookBase\\CookBase.csproj",
-              "RelativeToolTip": "CookBase\\CookBase.csproj",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-10T16:41:40.207Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CategoryCache.cs",
-              "DocumentMoniker": "C:\\Users\\Student1\\Documents\\GitHub\\CookBase\\CookBase\\CookBase\\Caches\\CategoryCache.cs",
-              "RelativeDocumentMoniker": "CookBase\\Caches\\CategoryCache.cs",
-              "ToolTip": "C:\\Users\\Student1\\Documents\\GitHub\\CookBase\\CookBase\\CookBase\\Caches\\CategoryCache.cs",
-              "RelativeToolTip": "CookBase\\Caches\\CategoryCache.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T16:30:26.207Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Microsoft.Maui.Controls.targets",
-              "DocumentMoniker": "C:\\Users\\Student1\\.nuget\\packages\\microsoft.maui.controls.build.tasks\\9.0.0\\buildTransitive\\netstandard2.0\\Microsoft.Maui.Controls.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\.nuget\\packages\\microsoft.maui.controls.build.tasks\\9.0.0\\buildTransitive\\netstandard2.0\\Microsoft.Maui.Controls.targets",
-              "ToolTip": "C:\\Users\\Student1\\.nuget\\packages\\microsoft.maui.controls.build.tasks\\9.0.0\\buildTransitive\\netstandard2.0\\Microsoft.Maui.Controls.targets",
-              "RelativeToolTip": "..\\..\\..\\..\\.nuget\\packages\\microsoft.maui.controls.build.tasks\\9.0.0\\buildTransitive\\netstandard2.0\\Microsoft.Maui.Controls.targets",
-              "ViewState": "AgIAAJwAAAAAAAAAAAAuwKoAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-12-10T14:45:51.016Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RecipesPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Student1\\Documents\\GitHub\\CookBase\\CookBase\\CookBase\\RecipesPage.xaml.cs",
-              "RelativeDocumentMoniker": "CookBase\\RecipesPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Student1\\Documents\\GitHub\\CookBase\\CookBase\\CookBase\\RecipesPage.xaml.cs",
-              "RelativeToolTip": "CookBase\\RecipesPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T14:45:33.459Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "RecipesPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Student1\\Documents\\GitHub\\CookBase\\CookBase\\CookBase\\RecipesPage.xaml",
-              "RelativeDocumentMoniker": "CookBase\\RecipesPage.xaml",
-              "ToolTip": "C:\\Users\\Student1\\Documents\\GitHub\\CookBase\\CookBase\\CookBase\\RecipesPage.xaml",
-              "RelativeToolTip": "CookBase\\RecipesPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-10T14:43:31.651Z",
+              "Title": "CategoriesPage.xaml.cs",
+              "DocumentMoniker": "K:\\GitHub\\CookBase\\CookBase\\CookBase\\CategoriesPage.xaml.cs",
+              "RelativeDocumentMoniker": "CookBase\\CategoriesPage.xaml.cs",
+              "ToolTip": "K:\\GitHub\\CookBase\\CookBase\\CookBase\\CategoriesPage.xaml.cs",
+              "RelativeToolTip": "CookBase\\CategoriesPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-13T09:50:40.779Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProductsPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Student1\\Documents\\GitHub\\CookBase\\CookBase\\CookBase\\ProductsPage.xaml",
-              "RelativeDocumentMoniker": "CookBase\\ProductsPage.xaml",
-              "ToolTip": "C:\\Users\\Student1\\Documents\\GitHub\\CookBase\\CookBase\\CookBase\\ProductsPage.xaml",
-              "RelativeToolTip": "CookBase\\ProductsPage.xaml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACAAAAAtAAAAAAAAAA==",
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "K:\\GitHub\\CookBase\\CookBase\\CookBase\\MainPage.xaml",
+              "RelativeDocumentMoniker": "CookBase\\MainPage.xaml",
+              "ToolTip": "K:\\GitHub\\CookBase\\CookBase\\CookBase\\MainPage.xaml*",
+              "RelativeToolTip": "CookBase\\MainPage.xaml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-10T14:43:24.595Z",
+              "WhenOpened": "2026-01-13T09:12:43.549Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CategoriesPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Student1\\Documents\\GitHub\\CookBase\\CookBase\\CookBase\\CategoriesPage.xaml",
-              "RelativeDocumentMoniker": "CookBase\\CategoriesPage.xaml",
-              "ToolTip": "C:\\Users\\Student1\\Documents\\GitHub\\CookBase\\CookBase\\CookBase\\CategoriesPage.xaml",
-              "RelativeToolTip": "CookBase\\CategoriesPage.xaml",
-              "ViewState": "AgIAACUAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-10T14:43:13.196Z",
+              "DocumentIndex": 2,
+              "Title": "CookBase",
+              "DocumentMoniker": "K:\\GitHub\\CookBase\\CookBase\\CookBase\\CookBase.csproj",
+              "RelativeDocumentMoniker": "CookBase\\CookBase.csproj",
+              "ToolTip": "K:\\GitHub\\CookBase\\CookBase\\CookBase\\CookBase.csproj",
+              "RelativeToolTip": "CookBase\\CookBase.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-13T09:17:34.075Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AppShell.xaml",
-              "DocumentMoniker": "C:\\Users\\Student1\\Documents\\GitHub\\CookBase\\CookBase\\CookBase\\AppShell.xaml",
-              "RelativeDocumentMoniker": "CookBase\\AppShell.xaml",
-              "ToolTip": "C:\\Users\\Student1\\Documents\\GitHub\\CookBase\\CookBase\\CookBase\\AppShell.xaml",
-              "RelativeToolTip": "CookBase\\AppShell.xaml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-10T14:36:11.198Z",
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "K:\\GitHub\\CookBase\\CookBase\\CookBase\\App.xaml.cs",
+              "RelativeDocumentMoniker": "CookBase\\App.xaml.cs",
+              "ToolTip": "K:\\GitHub\\CookBase\\CookBase\\CookBase\\App.xaml.cs",
+              "RelativeToolTip": "CookBase\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-13T09:17:28.982Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "AppShell.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Student1\\Documents\\GitHub\\CookBase\\CookBase\\CookBase\\AppShell.xaml.cs",
-              "RelativeDocumentMoniker": "CookBase\\AppShell.xaml.cs",
-              "ToolTip": "C:\\Users\\Student1\\Documents\\GitHub\\CookBase\\CookBase\\CookBase\\AppShell.xaml.cs",
-              "RelativeToolTip": "CookBase\\AppShell.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T14:36:07.868Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Student1\\Documents\\GitHub\\CookBase\\CookBase\\CookBase\\MainPage.xaml.cs",
-              "RelativeDocumentMoniker": "CookBase\\MainPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Student1\\Documents\\GitHub\\CookBase\\CookBase\\CookBase\\MainPage.xaml.cs",
-              "RelativeToolTip": "CookBase\\MainPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T14:34:23.971Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ProductsPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Student1\\Documents\\GitHub\\CookBase\\CookBase\\CookBase\\ProductsPage.xaml.cs",
-              "RelativeDocumentMoniker": "CookBase\\ProductsPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Student1\\Documents\\GitHub\\CookBase\\CookBase\\CookBase\\ProductsPage.xaml.cs",
-              "RelativeToolTip": "CookBase\\ProductsPage.xaml.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACMAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T14:30:46.532Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CategoriesPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Student1\\Documents\\GitHub\\CookBase\\CookBase\\CookBase\\CategoriesPage.xaml.cs",
-              "RelativeDocumentMoniker": "CookBase\\CategoriesPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Student1\\Documents\\GitHub\\CookBase\\CookBase\\CookBase\\CategoriesPage.xaml.cs",
-              "RelativeToolTip": "CookBase\\CategoriesPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T14:30:37.379Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Student1\\Documents\\GitHub\\CookBase\\CookBase\\CookBase\\App.xaml.cs",
-              "RelativeDocumentMoniker": "CookBase\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\Student1\\Documents\\GitHub\\CookBase\\CookBase\\CookBase\\App.xaml.cs",
-              "RelativeToolTip": "CookBase\\App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T14:30:24.451Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MainPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Student1\\Documents\\GitHub\\CookBase\\CookBase\\CookBase\\MainPage.xaml",
-              "RelativeDocumentMoniker": "CookBase\\MainPage.xaml",
-              "ToolTip": "C:\\Users\\Student1\\Documents\\GitHub\\CookBase\\CookBase\\CookBase\\MainPage.xaml",
-              "RelativeToolTip": "CookBase\\MainPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
+              "Title": "App.xaml",
+              "DocumentMoniker": "K:\\GitHub\\CookBase\\CookBase\\CookBase\\App.xaml",
+              "RelativeDocumentMoniker": "CookBase\\App.xaml",
+              "ToolTip": "K:\\GitHub\\CookBase\\CookBase\\CookBase\\App.xaml",
+              "RelativeToolTip": "CookBase\\App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-27T12:47:44.99Z",
+              "WhenOpened": "2026-01-13T09:17:26.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RecipeDetailsPage.xaml",
+              "DocumentMoniker": "K:\\GitHub\\CookBase\\CookBase\\CookBase\\RecipeDetailsPage.xaml",
+              "RelativeDocumentMoniker": "CookBase\\RecipeDetailsPage.xaml",
+              "ToolTip": "K:\\GitHub\\CookBase\\CookBase\\CookBase\\RecipeDetailsPage.xaml",
+              "RelativeToolTip": "CookBase\\RecipeDetailsPage.xaml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAACwAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-07T14:20:42.331Z",
               "EditorCaption": ""
             }
           ]

@@ -37,18 +37,18 @@ namespace CookBase.Data
 
             var categories = new List<Category>
             {
-                new Category("Dairy", "dairy.png"),
-                new Category("Fish and Seafood", "fish_and_seafood.png"),
-                new Category("Flour Products", "flour_products.png"),
-                new Category("Fruits", "fruits.png"),
-                new Category("Legumes", "legumes.png"),
-                new Category("Meat", "meat.png"),
-                new Category("Nuts", "nuts.png"),
-                new Category("Oil", "oil.png"),
-                new Category("Spices", "spices.png"),
-                new Category("Vegetables", "vegetables.png")
+                new Category("Owoce", "fruits.png"),
+                new Category("Warzywa", "vegetables.png"),
+                new Category("Nabiał", "dairy.png"),
+                new Category("Ryby i owoce morza", "fish_and_seafood.png"),
+                new Category("Produkty mączne", "flour_products.png"),
+                new Category("Strączki", "legumes.png"),
+                new Category("Mięso", "meat.png"),
+                new Category("Orzechy", "nuts.png"),
+                new Category("Oleje", "oil.png"),
+                new Category("Przyprawy", "spices.png"),
+                new Category("Inne", "other.png")
             };
-
             db.Categories.AddRange(categories);
             db.SaveChanges();
 

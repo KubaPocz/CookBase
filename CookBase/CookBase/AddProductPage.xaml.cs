@@ -66,8 +66,7 @@ public partial class AddProductPage : ContentPage
             NameEntry.Text = string.Empty;
             CategoryPicker.SelectedItem = null;
 
-            // jeœli chcesz wróciæ na listê produktów:
-            // await Navigation.PopAsync();
+            await Navigation.PopAsync();
         }
         catch (Exception ex)
         {

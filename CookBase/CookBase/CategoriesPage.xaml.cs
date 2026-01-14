@@ -15,7 +15,7 @@ public partial class CategoriesPage : ContentPage
         {
             var categories = CategoryCache.Categories;
 
-            BindableLayout.SetItemsSource(CategoriesFlexLayout, categories);
+            BindableLayout.SetItemsSource(CategoriesList, categories);
         }
         catch (Exception ex)
         {
@@ -23,13 +23,13 @@ public partial class CategoriesPage : ContentPage
         }
     }
 
-    private void OnCategoryTapped(object sender, EventArgs e)
+    private async void OnCategoryTapped(object sender, EventArgs e)
     {
         var frame = sender as Frame;
         var category = frame?.BindingContext as Category;
         if (category != null)
         {
-            DisplayAlert("Kategoria", $"Wybrano kategoriê: {category.Name}", "OK");
+            await Shell.Current.GoToAsync($"{nameof(ProductsPage)}?categoryId={category.Id}");
         }
     }
 

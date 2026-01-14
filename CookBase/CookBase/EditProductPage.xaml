@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="CookBase.EditProductPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Edytuj produkt">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="{OnIdiom Phone=16, Tablet=20, Desktop=60}" Spacing="12">
+
+            <Label
+                FontAttributes="Bold"
+                FontSize="22"
+                Text="Edytuj produkt" />
+
+            <!--  Komunikat o użyciu w przepisach  -->
+            <Frame
+                x:Name="UsageFrame"
+                Padding="12"
+                CornerRadius="14"
+                HasShadow="True"
+                IsVisible="False">
+                <Label x:Name="UsageLabel" />
+            </Frame>
+
+            <Entry x:Name="NameEntry" Placeholder="Nazwa produktu" />
+
+            <Picker x:Name="CategoryPicker" Title="Wybierz kategorię" />
+
+            <Button Clicked="OnSaveClicked" Text="Zapisz zmiany" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

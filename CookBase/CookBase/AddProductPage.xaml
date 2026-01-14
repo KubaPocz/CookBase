@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CookBase.AddProductPage"
-             Title="Dodaj produkt">
+<ContentPage
+    x:Class="CookBase.AddProductPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Dodaj produkt">
 
     <ScrollView>
         <VerticalStackLayout
             Padding="20"
+            BackgroundColor="LightGray"
             Spacing="16">
 
             <Label
-                Text="Dodaj nowy produkt"
-                FontSize="24"
                 FontAttributes="Bold"
-                HorizontalOptions="Center" />
+                FontSize="24"
+                HorizontalOptions="Center"
+                Text="Dodaj nowy produkt" />
 
-            <!-- Nazwa produktu -->
+            <!--  Nazwa produktu  -->
             <Label Text="Nazwa produktu:" />
-            <Entry
-                x:Name="NameEntry"
-                Placeholder="Wpisz nazwę produktu" />
+            <Entry x:Name="NameEntry" Placeholder="Wpisz nazwę produktu" />
 
-            <!-- Kategoria -->
+            <!--  Kategoria  -->
             <Label Text="Kategoria:" />
             <Picker
                 x:Name="CategoryPicker"
                 Title="Wybierz kategorię"
                 ItemDisplayBinding="{Binding Name}" />
 
-            <!-- Przycisk Zapisz -->
+            <!--  Przycisk Zapisz  -->
             <Button
-                Text="Zapisz"
                 Clicked="OnSaveClicked"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center"
+                Text="Zapisz" />
         </VerticalStackLayout>
     </ScrollView>
 

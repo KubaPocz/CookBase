@@ -1,39 +1,105 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CookBase.RecipesPage">
-    <VerticalStackLayout>
+<ContentPage
+    x:Class="CookBase.RecipesPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:CookBase"
+    Title="Przepisy">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:RecipeImageSourceConverter x:Key="RecipeImageSourceConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <VerticalStackLayout BackgroundColor="LightGrey">
+
+        <!--  Pasek góra: Back / Add  -->
         <Grid
-ColumnDefinitions="Auto,*,Auto"
-Padding="10,0"
-HeightRequest="60"
-VerticalOptions="Center">
+            Padding="10,0"
+            BackgroundColor="LightGrey"
+            ColumnDefinitions="Auto,*,Auto"
+            HeightRequest="60">
+            <Button
+                BackgroundColor="LightGrey"
+                Clicked="OnHomeClicked"
+                FontAttributes="Bold"
+                FontSize="{OnIdiom Desktop=30,
+                                   Tablet=27,
+                                   Phone=25}"
+                HeightRequest="40"
+                Text="Back"
+                TextColor="Orange" />
 
             <Button
-        Text="◄"
-        TextColor="Black"
-        BackgroundColor="White"
-        WidthRequest="60"
-        HeightRequest="60"
-        FontSize="{OnIdiom Desktop=40,
-        Tablet=35,
-        Phone=30}" 
-        Clicked="OnHomeClicked" />
-
-            <Button
-        Text="+"
-        Grid.Column="2"
-        TextColor="Black"
-        BackgroundColor="White"
-        WidthRequest="60"
-        HeightRequest="60"           
-        FontSize="{OnIdiom Desktop=40,
-        Tablet=35,
-        Phone=30}" />
+                Grid.Column="2"
+                BackgroundColor="LightGrey"
+                Clicked="OnAddRecipeClicked"
+                FontAttributes="Bold"
+                FontSize="{OnIdiom Desktop=30,
+                                   Tablet=27,
+                                   Phone=25}"
+                HeightRequest="40"
+                Text="Add"
+                TextColor="Orange" />
         </Grid>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <Label
+            Margin="0,8,0,8"
+            FontAttributes="Bold"
+            FontSize="28"
+            HorizontalOptions="Center"
+            Text="Przepisy"
+            TextColor="Black" />
+
+        <CollectionView
+            x:Name="RecipesCollection"
+            Margin="{OnIdiom Phone=12,
+                             Tablet=20,
+                             Desktop=60}"
+            EmptyView="Brak przepisów."
+            SelectionMode="None">
+
+            <!--  Responsywna siatka  -->
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical" Span="{OnIdiom Phone=2, Tablet=3, Desktop=4}" />
+            </CollectionView.ItemsLayout>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame
+                        Margin="6"
+                        Padding="10"
+                        CornerRadius="18"
+                        HasShadow="True">
+                        <VerticalStackLayout Spacing="8">
+
+                            <!--  Kwadratowe zdjęcie  -->
+                            <Grid HeightRequest="{OnIdiom Phone=140, Tablet=180, Desktop=220}">
+                                <Image Aspect="AspectFill" Source="{Binding ImageUrl, Converter={StaticResource RecipeImageSourceConverter}}" />
+                                <!--  tap na całym kafelku  -->
+                                <Grid.GestureRecognizers>
+                                    <TapGestureRecognizer CommandParameter="{Binding .}" Tapped="OnRecipeTapped" />
+                                </Grid.GestureRecognizers>
+                            </Grid>
+
+                            <Label
+                                FontAttributes="Bold"
+                                FontSize="16"
+                                LineBreakMode="TailTruncation"
+                                MaxLines="2"
+                                Text="{Binding Title}" />
+
+                            <Label
+                                FontSize="13"
+                                Text="{Binding MetaLine}"
+                                TextColor="{AppThemeBinding Light=#6B7280,
+                                                            Dark=#CBD5E1}" />
+
+                        </VerticalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
+        </CollectionView>
     </VerticalStackLayout>
 </ContentPage>

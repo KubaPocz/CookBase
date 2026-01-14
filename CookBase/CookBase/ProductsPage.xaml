@@ -1,64 +1,122 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CookBase.ProductsPage">
-    <VerticalStackLayout>
+<ContentPage
+    x:Class="CookBase.ProductsPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Produkty">
+
+    <VerticalStackLayout BackgroundColor="LightGrey">
+
+        <!--  Pasek góra: Back / Add  -->
         <Grid
-ColumnDefinitions="Auto,*,Auto"
-Padding="10,0"
-HeightRequest="60"
-VerticalOptions="Center">
+            Padding="10,0"
+            BackgroundColor="LightGrey"
+            ColumnDefinitions="Auto,*,Auto"
+            HeightRequest="60">
+            <Button
+                BackgroundColor="LightGrey"
+                Clicked="OnHomeClicked"
+                FontAttributes="Bold"
+                FontSize="{OnIdiom Desktop=30,
+                                   Tablet=27,
+                                   Phone=25}"
+                HeightRequest="40"
+                Text="Back"
+                TextColor="Orange" />
 
             <Button
-        Text="◄"
-        TextColor="Black"
-        BackgroundColor="White"
-        WidthRequest="60"
-        HeightRequest="60"
-        FontSize="{OnIdiom Desktop=40,
-        Tablet=35,
-        Phone=30}" 
-        Clicked="OnHomeClicked" />
-
-            <Button
-        Text="+"
-        Grid.Column="2"
-        TextColor="Black"
-        BackgroundColor="White"
-        WidthRequest="60"
-        HeightRequest="60"           
-        FontSize="{OnIdiom Desktop=40,
-        Tablet=35,
-        Phone=30}"
-                Clicked="OnAddProductClicked"/>
+                Grid.Column="2"
+                BackgroundColor="LightGrey"
+                Clicked="OnAddProductClicked"
+                FontAttributes="Bold"
+                FontSize="{OnIdiom Desktop=30,
+                                   Tablet=27,
+                                   Phone=25}"
+                HeightRequest="40"
+                Text="Add"
+                TextColor="Orange" />
         </Grid>
-        <CollectionView
-        x:Name="ProductsList"
-        Margin="16"
-        SelectionMode="None">
+        <Label
+            Margin="0,8,0,8"
+            FontAttributes="Bold"
+            FontSize="28"
+            HorizontalOptions="Center"
+            Text="Produkty"
+            TextColor="Black" />
+        <!--  Filtry  -->
+        <VerticalStackLayout Padding="16,10" Spacing="10">
+            <Picker
+                x:Name="CategoryFilterPicker"
+                Title="Wybierz kategorię"
+                BackgroundColor="White"
+                SelectedIndexChanged="OnFiltersChanged" />
 
+            <SearchBar
+                x:Name="SearchBar"
+                BackgroundColor="White"
+                Placeholder="Szukaj produktu po nazwie…"
+                TextChanged="OnFiltersChanged" />
+        </VerticalStackLayout>
+
+        <!--  Lista  -->
+        <CollectionView
+            x:Name="ProductsList"
+            Margin="16,0,16,16"
+            EmptyView="Brak produktów dla wybranych filtrów."
+            SelectionMode="None">
 
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Grid Padding="12" RowDefinitions="Auto,Auto">
+                    <!--  Tylko edycja: Swipe albo przycisk  -->
+                    <SwipeView>
+                        <SwipeView.RightItems>
+                            <SwipeItems Mode="Reveal">
+                                <SwipeItem
+                                    BackgroundColor="#F59E0B"
+                                    CommandParameter="{Binding .}"
+                                    Invoked="OnEditProductInvoked"
+                                    Text="Edytuj" />
+                            </SwipeItems>
+                        </SwipeView.RightItems>
 
-                        <!-- Nazwa produktu -->
-                        <Label
-                        Text="{Binding Name}"
-                        FontSize="18"
-                        FontAttributes="Bold"
-                        TextColor="{AppThemeBinding Light=#2D3748, Dark=#F7FAFC}" />
+                        <Frame
+                            Margin="0,4"
+                            Padding="12"
+                            CornerRadius="16"
+                            HasShadow="True">
+                            <Grid
+                                ColumnDefinitions="*,Auto"
+                                ColumnSpacing="12"
+                                RowDefinitions="Auto,Auto">
+                                <Label
+                                    Grid.Row="0"
+                                    Grid.Column="0"
+                                    FontAttributes="Bold"
+                                    FontSize="18"
+                                    Text="{Binding Name}" />
 
-                        <!-- Nazwa kategorii -->
-                        <Label
-                        Grid.Row="1"
-                        Text="{Binding Category.Name}"
-                        FontSize="14"
-                        TextColor="{AppThemeBinding Light=#6B7280, Dark=#CBD5E1}" />
+                                <Label
+                                    Grid.Row="1"
+                                    Grid.Column="0"
+                                    FontSize="14"
+                                    Opacity="0.75"
+                                    Text="{Binding Category.Name}" />
 
-                    </Grid>
+                                <Button
+                                    Grid.RowSpan="2"
+                                    Grid.Column="1"
+                                    BackgroundColor="Orange"
+                                    Clicked="OnEditProductClicked"
+                                    CommandParameter="{Binding .}"
+                                    FontAttributes="Bold"
+                                    Text="Edytuj"
+                                    TextColor="Black" />
+                            </Grid>
+                        </Frame>
+                    </SwipeView>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
+
     </VerticalStackLayout>
 </ContentPage>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="CookBase.RecipeDetailsPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Szczegóły przepisu">
+
+    <ScrollView BackgroundColor="LightGrey">
+        <VerticalStackLayout Padding="{OnIdiom Phone=16, Tablet=20, Desktop=60}" Spacing="12">
+
+            <!--  Góra: Wróć + Usuń  -->
+            <Grid ColumnDefinitions="*,Auto" ColumnSpacing="12">
+                <Button
+                    Grid.Column="0"
+                    BackgroundColor="Orange"
+                    Clicked="OnBackClicked"
+                    Text="Wróć"
+                    TextColor="Black" />
+
+                <Button
+                    Grid.Column="1"
+                    BackgroundColor="#EF4444"
+                    Clicked="OnDeleteClicked"
+                    Text="Usuń"
+                    TextColor="White" />
+            </Grid>
+
+            <!--  Obrazek (kwadrat, nie ucina)  -->
+            <Grid HorizontalOptions="Center">
+                <Frame
+                    Padding="0"
+                    CornerRadius="18"
+                    HasShadow="True">
+
+                    <Image
+                        x:Name="HeroImage"
+                        Aspect="AspectFit"
+                        HeightRequest="{OnIdiom Phone=260,
+                                                Tablet=320,
+                                                Desktop=420}"
+                        WidthRequest="{OnIdiom Phone=260,
+                                               Tablet=320,
+                                               Desktop=420}" />
+                </Frame>
+            </Grid>
+
+            <Label
+                x:Name="TitleLabel"
+                FontAttributes="Bold"
+                FontSize="24" />
+
+            <Label
+                x:Name="MetaLabel"
+                FontSize="14"
+                TextColor="{AppThemeBinding Light=#6B7280,
+                                            Dark=#CBD5E1}" />
+
+            <Label
+                FontAttributes="Bold"
+                FontSize="18"
+                Text="Opis" />
+
+            <Label x:Name="DescriptionLabel" />
+
+            <Label
+                FontAttributes="Bold"
+                FontSize="18"
+                Text="Składniki" />
+
+            <CollectionView
+                x:Name="IngredientsList"
+                EmptyView="Brak składników."
+                SelectionMode="None">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame
+                            Margin="0,4"
+                            Padding="12"
+                            CornerRadius="14"
+                            HasShadow="True">
+                            <VerticalStackLayout Spacing="2">
+                                <Label FontAttributes="Bold" Text="{Binding Line}" />
+                                <Label
+                                    FontSize="12"
+                                    IsVisible="{Binding HasNote}"
+                                    Opacity="0.75"
+                                    Text="{Binding Note}" />
+                            </VerticalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
+
