@@ -19,14 +19,14 @@
 
             <!--  Nazwa produktu  -->
             <Label Text="Nazwa produktu:" />
-            <Entry x:Name="NameEntry" Placeholder="Wpisz nazwę produktu" />
+            <Entry x:Name="NameEntry" Placeholder="Wpisz nazwę produktu" BackgroundColor="White"/>
 
             <!--  Kategoria  -->
             <Label Text="Kategoria:" />
             <Picker
                 x:Name="CategoryPicker"
                 Title="Wybierz kategorię"
-                ItemDisplayBinding="{Binding Name}" />
+                ItemDisplayBinding="{Binding Name}"  BackgroundColor="White"/>
 
             <!--  Przycisk Zapisz  -->
             <Button

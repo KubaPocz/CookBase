@@ -5,23 +5,24 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     Title="Produkty">
 
-    <VerticalStackLayout BackgroundColor="LightGrey">
+    <!-- ZAMIANA: Grid jako root, ostatni wiersz * dla listy -->
+    <Grid BackgroundColor="LightGrey"
+          RowDefinitions="Auto,Auto,Auto,*">
 
-        <!--  Pasek góra: Back / Add  -->
-        <Grid
-            Padding="10,0"
-            BackgroundColor="LightGrey"
-            ColumnDefinitions="Auto,*,Auto"
-            HeightRequest="60">
+        <!-- Górny pasek -->
+        <Grid Grid.Row="0"
+              Padding="10,0"
+              BackgroundColor="LightGrey"
+              ColumnDefinitions="Auto,*,Auto"
+              HeightRequest="60">
+
             <Button
                 BackgroundColor="LightGrey"
                 Clicked="OnHomeClicked"
                 FontAttributes="Bold"
-                FontSize="{OnIdiom Desktop=30,
-                                   Tablet=27,
-                                   Phone=25}"
-                HeightRequest="40"
-                Text="Back"
+                FontSize="{OnIdiom Desktop=30, Tablet=27, Phone=25}"
+                HeightRequest="60"
+                Text="Wstecz"
                 TextColor="Orange" />
 
             <Button
@@ -29,22 +30,26 @@
                 BackgroundColor="LightGrey"
                 Clicked="OnAddProductClicked"
                 FontAttributes="Bold"
-                FontSize="{OnIdiom Desktop=30,
-                                   Tablet=27,
-                                   Phone=25}"
-                HeightRequest="40"
-                Text="Add"
+                FontSize="{OnIdiom Desktop=30, Tablet=27, Phone=25}"
+                HeightRequest="60"
+                Text="Dodaj"
                 TextColor="Orange" />
         </Grid>
-        <Label
-            Margin="0,8,0,8"
-            FontAttributes="Bold"
-            FontSize="28"
-            HorizontalOptions="Center"
-            Text="Produkty"
-            TextColor="Black" />
-        <!--  Filtry  -->
-        <VerticalStackLayout Padding="16,10" Spacing="10">
+
+        <!-- Tytuł -->
+        <Label Grid.Row="1"
+               Margin="0,8,0,8"
+               FontAttributes="Bold"
+               FontSize="28"
+               HorizontalOptions="Center"
+               Text="Produkty"
+               TextColor="Black" />
+
+        <!-- Filtry -->
+        <VerticalStackLayout Grid.Row="2"
+                             Padding="16,10"
+                             Spacing="10">
+
             <Picker
                 x:Name="CategoryFilterPicker"
                 Title="Wybierz kategorię"
@@ -58,65 +63,63 @@
                 TextChanged="OnFiltersChanged" />
         </VerticalStackLayout>
 
-        <!--  Lista  -->
-        <CollectionView
-            x:Name="ProductsList"
-            Margin="16,0,16,16"
-            EmptyView="Brak produktów dla wybranych filtrów."
-            SelectionMode="None">
+        <!-- LISTA: wiersz * -> scroll działa -->
+        <CollectionView Grid.Row="3"
+                        x:Name="ProductsList"
+                        Margin="16,0,16,16"
+                        SelectionMode="None"
+                        EmptyView="Brak produktów dla wybranych filtrów."
+                        VerticalOptions="FillAndExpand">
 
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <!--  Tylko edycja: Swipe albo przycisk  -->
                     <SwipeView>
                         <SwipeView.RightItems>
                             <SwipeItems Mode="Reveal">
                                 <SwipeItem
+                                    Text="Edytuj"
                                     BackgroundColor="#F59E0B"
                                     CommandParameter="{Binding .}"
-                                    Invoked="OnEditProductInvoked"
-                                    Text="Edytuj" />
+                                    Invoked="OnEditProductInvoked" />
                             </SwipeItems>
                         </SwipeView.RightItems>
 
-                        <Frame
-                            Margin="0,4"
-                            Padding="12"
-                            CornerRadius="16"
-                            HasShadow="True">
-                            <Grid
-                                ColumnDefinitions="*,Auto"
-                                ColumnSpacing="12"
-                                RowDefinitions="Auto,Auto">
-                                <Label
-                                    Grid.Row="0"
-                                    Grid.Column="0"
-                                    FontAttributes="Bold"
-                                    FontSize="18"
-                                    Text="{Binding Name}" />
+                        <Frame Margin="0,4"
+                               Padding="12"
+                               CornerRadius="16"
+                               HasShadow="True">
 
-                                <Label
-                                    Grid.Row="1"
-                                    Grid.Column="0"
-                                    FontSize="14"
-                                    Opacity="0.75"
-                                    Text="{Binding Category.Name}" />
+                            <Grid ColumnDefinitions="*,Auto"
+                                  ColumnSpacing="12"
+                                  RowDefinitions="Auto,Auto">
 
-                                <Button
-                                    Grid.RowSpan="2"
-                                    Grid.Column="1"
-                                    BackgroundColor="Orange"
-                                    Clicked="OnEditProductClicked"
-                                    CommandParameter="{Binding .}"
-                                    FontAttributes="Bold"
-                                    Text="Edytuj"
-                                    TextColor="Black" />
+                                <Label Grid.Row="0"
+                                       Grid.Column="0"
+                                       Text="{Binding Name}"
+                                       FontSize="18"
+                                       FontAttributes="Bold" />
+
+                                <Label Grid.Row="1"
+                                       Grid.Column="0"
+                                       Text="{Binding Category.Name}"
+                                       FontSize="14"
+                                       Opacity="0.75" />
+
+                                <Button Grid.RowSpan="2"
+                                        Grid.Column="1"
+                                        Text="Edytuj"
+                                        FontAttributes="Bold"
+                                        BackgroundColor="Orange"
+                                        TextColor="Black"
+                                        CommandParameter="{Binding .}"
+                                        Clicked="OnEditProductClicked" />
                             </Grid>
                         </Frame>
                     </SwipeView>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
+
         </CollectionView>
 
-    </VerticalStackLayout>
+    </Grid>
 </ContentPage>

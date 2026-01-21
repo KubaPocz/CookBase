@@ -14,7 +14,6 @@
 
     <VerticalStackLayout BackgroundColor="LightGrey">
 
-        <!--  Pasek góra: Back / Add  -->
         <Grid
             Padding="10,0"
             BackgroundColor="LightGrey"
@@ -27,8 +26,8 @@
                 FontSize="{OnIdiom Desktop=30,
                                    Tablet=27,
                                    Phone=25}"
-                HeightRequest="40"
-                Text="Back"
+                HeightRequest="60"
+                Text="Wstecz"
                 TextColor="Orange" />
 
             <Button
@@ -39,8 +38,8 @@
                 FontSize="{OnIdiom Desktop=30,
                                    Tablet=27,
                                    Phone=25}"
-                HeightRequest="40"
-                Text="Add"
+                HeightRequest="60"
+                Text="Dodaj"
                 TextColor="Orange" />
         </Grid>
         <Label
