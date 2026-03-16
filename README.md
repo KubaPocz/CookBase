@@ -16,14 +16,7 @@ CookBase to aplikacja mobilna stworzona w technologii **.NET MAUI**, służąca 
     - Kroki przygotowania.
     - Czas przygotowania.
     - Poziom trudności.
-    - Oznaczenia "wege" i "wegan".
     - Zdjęcie gotowej potrawy.
-  
-- **Generowanie listy zakupów**:
-  - 🛒 Aplikacja umożliwia generowanie listy zakupów na podstawie wybranego przepisu w formie checklisty lub eksportu do pliku **PDF**.
-  
-- **Importowanie przepisów**:
-  - 📥 Możliwość importu przepisów z pliku, co ułatwia rozbudowę własnej bazy kulinarnej.
 
 ---
 
@@ -42,7 +35,6 @@ Aplikacja została zaprojektowana zgodnie z architekturą **MVVM** (Model-View-V
 - **.NET MAUI** - framework do tworzenia aplikacji mobilnych działających na wielu platformach.
 - **SQLite** - lokalna baza danych do przechowywania danych offline.
 - **MVVM** - architektura aplikacji.
-- **PDF Export** - generowanie plików PDF dla list zakupów.
 
 ---
 
@@ -52,9 +44,7 @@ Po uruchomieniu aplikacji użytkownik może:
 
 - Dodawać produkty do bazy danych.
 - Tworzyć nowe przepisy kulinarne.
-- Generować listy zakupów z wybranych przepisów.
-- Eksportować listy zakupów do pliku PDF.
-- Importować przepisy z plików.
+- Przeglądać pozycje
 
 ---
 
@@ -66,5 +56,11 @@ Aby dodać produkt, użytkownik wybiera kategorię, wprowadza nazwę produktu i 
 ### 2. Tworzenie przepisu
 Aby stworzyć przepis, użytkownik wybiera składniki z listy lub dodaje nowe, określa kroki przygotowania, czas, poziom trudności oraz oznaczenie wege/wegan.
 
-### 3. Generowanie listy zakupów
-Na podstawie wybranego przepisu aplikacja generuje listę zakupów, którą można zapisać w formie checklisty lub pliku PDF.
+### 3. Edycja produktu
+Możliwość edycji dodanego produktu.
+
+### 4. Przeglądanie kategorii, przepisów
+Możliwość wygodnego i przejrzystego przeglądania dodanych pozycji z kategorii oraz przepisów.
+
+### 5. Przeglądanie oraz sortowanie produktów
+Możliwość przeglądania oraz sortowania produktow na podstawie nazwy oraz wg. kategorii.
